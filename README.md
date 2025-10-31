@@ -1,6 +1,12 @@
 # Stats Course Web (React + Vite + Tailwind)
 
-This is a ready-to-run web UI for the "Practical Statistics with Python" course.
+Personalized for **GitHub user: bulisa**
+
+External links point to your repo:
+- Notebooks base: https://raw.githubusercontent.com/bulisa/practical-stats-python-course/main/notebooks
+- Datasets base: https://raw.githubusercontent.com/bulisa/practical-stats-python-course/main/datasets
+- Syllabus: https://raw.githubusercontent.com/bulisa/practical-stats-python-course/main/docs/SYLLABUS.md
+- GitHub repo: https://github.com/bulisa/practical-stats-python-course
 
 ## Run locally
 ```bash
@@ -9,14 +15,7 @@ npm run dev
 ```
 Open http://localhost:3000
 
-## Build for production
-```bash
-npm run build
-npm run preview
-```
-
-## Deploy
-- **Vercel**: Import this repo and deploy. No config needed.
-- **GitHub Pages**: Build and publish `dist/` with gh-pages.
-
-Update external links in `src/App.jsx` (GITHUB_URL, NOTEBOOK_BASE_URL, DATA_BASE_URL, SYLLABUS_PDF_URL) to point to your public repo.
+## Deploy on Vercel
+- Import this folder as a new Project and Deploy (Vite preset).
+- Or push to GitHub and connect the repo to Vercel.
+- Build command: `npm run build` — Output dir: `dist`
