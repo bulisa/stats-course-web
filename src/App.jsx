@@ -35,10 +35,10 @@ const AccordionTrigger = ({children, onClick}) => <div onClick={onClick} classNa
 const AccordionContent = ({children, open}) => open ? <div className='px-3 pb-3'>{children}</div> : null
 
 // ====== EXTERNAL LINKS (replace after pushing to GitHub) ======
-const GITHUB_URL = 'https://github.com/your-user/practical-stats-python-course';
-const SYLLABUS_PDF_URL = 'https://raw.githubusercontent.com/your-user/practical-stats-python-course/main/docs/SYLLABUS.md';
-const DATA_BASE_URL = 'https://raw.githubusercontent.com/your-user/practical-stats-python-course/main/datasets';
-const NOTEBOOK_BASE_URL = 'https://raw.githubusercontent.com/your-user/practical-stats-python-course/main/notebooks';
+const GITHUB_URL = 'https://github.com/bulisa/practical-stats-python-course';
+const SYLLABUS_PDF_URL = 'https://raw.githubusercontent.com/bulisa/practical-stats-python-course/main/docs/SYLLABUS.md';
+const DATA_BASE_URL = 'https://raw.githubusercontent.com/bulisa/practical-stats-python-course/main/datasets';
+const NOTEBOOK_BASE_URL = 'https://raw.githubusercontent.com/bulisa/practical-stats-python-course/main/notebooks';
 
 const modules = [
   { id: 'm1', icon: <BookOpen className='w-6 h-6'/>, title: 'Intro to Stats for Analysts', est: '2.5h', skills: ['Descriptive Stats','Data Types','Pandas Basics','Viz'],
