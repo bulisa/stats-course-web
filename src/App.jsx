@@ -131,7 +131,7 @@ export default function App(){
           <div className="font-semibold">Browse modules</div>
           <div className="flex gap-2">
             <Input value={query} onChange={(e)=>setQuery(e.target.value)} placeholder="Search lessons, e.g. 't-test'" className="w-64"/>
-            <Button variant="secondary" onClick={()=>{}} >Search</Button>
+            <Button variant="secondary">Search</Button>
           </div>
         </div>
       </section>
@@ -168,6 +168,26 @@ export default function App(){
         </div>
       </section>
     </main>
+
+    {showSyllabus && (
+      <div className="fixed inset-0 bg-black/40 z-40 flex items-center justify-center p-4">
+        <div className="bg-white rounded-2xl max-w-2xl w-full p-6 shadow-xl">
+          <div className="flex items-center justify-between mb-2">
+            <div className="flex items-center gap-2 font-semibold"><FileText className="w-4 h-4"/> Syllabus (6‑week)</div>
+            <Button size="sm" variant="outline" onClick={()=>setShowSyllabus(false)}>Close</Button>
+          </div>
+          <ol className="list-decimal pl-5 text-sm space-y-2 text-neutral-700">
+            <li><strong>Week 1:</strong> Descriptives & Viz; EDA one‑pager.</li>
+            <li><strong>Week 2:</strong> Probability & Distributions; simulation lab.</li>
+            <li><strong>Week 3:</strong> Sampling/CLT; confidence intervals.</li>
+            <li><strong>Week 4:</strong> Hypothesis tests; A/B design & analysis.</li>
+            <li><strong>Week 5:</strong> Regression; diagnostics & report.</li>
+            <li><strong>Week 6:</strong> Case studies; capstone presentation.</li>
+          </ol>
+          <div className="mt-4"><a href={SYLLABUS_PDF_URL} target="_blank" rel="noreferrer"><Button><FileText className="w-4 h-4 mr-1"/> Open full syllabus</Button></a></div>
+        </div>
+      </div>
+    )}
 
     <footer className="border-t mt-12">
       <div className="max-w-6xl mx-auto px-4 py-6 text-sm text-neutral-600 flex flex-col md:flex-row gap-2 md:items-center md:justify-between">
